@@ -1,0 +1,1341 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;600;700&family=Changa+One&family=Montserrat:wght@400;700&family=Work+Sans:wght@400;700;900&display=swap");
+@import url("../fonts/Poppins-Regular.ttf");
+@import url("../fonts/OpenSans-Regular.ttf");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 900px;
+  background: linear-gradient(to top, rgba(5, 25, 34, 0.7), rgba(5, 25, 34, 0.5)), url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  padding: 20px 10px;
+  position: relative;
+}
+
+.bg-light {
+  background: rgb(5, 25, 34) !important;
+}
+
+.navbar .navbar-brand {
+  font-family: "Arima", cursive;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-left: 40px;
+  color: white;
+}
+
+.navbar .navbar-nav .nav-item i {
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navbar .navbar-nav .nav-item .btn-primary {
+  border-radius: 0px;
+  margin-left: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+}
+
+.navbar .navbar-nav .nav-item .cart-item {
+  content: '3';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #051922;
+  border: 2px solid orange;
+  transform: translateY(-35px) translateX(30px);
+  margin-left: 15px;
+  text-align: center;
+  font-size: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+header .banner_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 50px;
+}
+
+header .banner_area i {
+  font-size: 30px;
+  color: orange;
+  margin-top: 10px;
+  animation: get-started 1s;
+  animation-duration: 5s;
+  cursor: pointer;
+  animation-iteration-count: 4;
+  transform: translateY(17px);
+}
+
+header .banner_area .scroll-down a:hover i {
+  font-size: 30px;
+  color: orange;
+  margin-top: 10px;
+  cursor: pointer;
+  transform: translateY(17px);
+}
+
+@keyframes get-started {
+  25% {
+    transform: translateY(-17px);
+  }
+  50% {
+    transform: translateY(17px);
+  }
+  100% {
+    transform: translateY(-17px);
+  }
+}
+
+header .banner_area h1 {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+header .banner_area p {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+header .banner_area .scroll-down {
+  margin-top: 100px;
+}
+
+header .banner_area a {
+  color: orange;
+  text-decoration: none;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+/*-------------------------- How it Works Area Area------------------------------- */
+
+#how-it-works {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+#how-it-works .container .text_area {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+#how-it-works .container .text_area h2, #plans_area .container .plans .text_area {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+#how-it-works .container .text_area p, #plans_area .container .plans .text_area {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+}
+
+#how-it-works .container .col-md-6 {
+  margin: 0 auto;
+  text-align: center;
+  /* box-shadow: 0 0 20px #e4e4e4;
+  padding: 10px 20px; */
+}
+
+#how-it-works .container .col-md-6 h3 {
+  padding: 10px 0px;
+}
+
+/*-------------------------- End How it Works Area------------------------------- */
+
+/*-------------------------- Menu Area------------------------------- */
+
+#menu_area {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background: url("../img/251.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 150px;
+  padding: 10px 0px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#menu_area .container {
+  height: 700px;
+  background: #fff;
+  padding-top: 20px;
+}
+
+#menu_area .container .btn-secondary {
+  background-color: #051922;
+  border-radius: 0px;
+  width: 200px;
+  margin-left: 550px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+  font-family: "Arima", sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+#menu_area .container .btn-secondary:hover {
+  background-color: #134f6b;
+  border: none;
+}
+
+#menu_area .online_menu .inner_menu {
+  width: 100%;
+  height: 450px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+#menu_area .online_menu .inner_menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+#menu_area .online_menu .inner_menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#menu_area .online_menu .inner_menu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+#menu_area .online_menu .card-group {
+  margin-bottom: 20px;
+}
+
+#menu_area .online_menu .card-group .card {
+  margin-left: 10px;
+  border: 1px solid rgba(197, 197, 197, 0.918);
+  border-radius: 10px !important;
+}
+
+#menu_area .online_menu .card-group .card h4 {
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+#menu_area .online_menu .card-group .card .card-text {
+  font-size: 9px;
+  font-family: "Poppins", sans-serif;
+}
+
+#menu_area .online_menu .card-group .card .card-img-top {
+  height: 200px;
+}
+
+#menu_area .online_menu .card-group .card-footer {
+  background: #051922;
+  border-radius: 0px 0px 10px 10px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu_area .online_menu .card-group .card-footer .text, #menu_area .online_menu .card-group .card-footer a {
+  font-family: "Work Sans", sans-serif;
+  color: orange !important;
+  font-size: 18px;
+}
+
+#menu_area .container .text_area, #plans_area .container .plans .text_area, #blog .container .text_area {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#menu_area .container .text_area h2, #plans_area .container .plans .text_area h2, #blog .container .text_area h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+
+#menu_area .container .text_area p, #plans_area .container .plans .text_area p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*-------------------------- End Menu Area------------------------------- */
+
+/* ------------------------------Plans Area ------------------------*/
+
+#plans_area {
+  margin-bottom: 150px;
+}
+
+#plans_area .container .plans .plan {
+  background-color: #fafbfe;
+  border-radius: 3px;
+  border: 1px solid #dae1f4;
+  position: relative;
+  text-align: center;
+}
+
+#plans_area .container .plans .plan .plan-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  background-color: #ebeef0;
+  color: orange;
+  border-radius: 0 0 3px 3px;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+#plans_area .container .plans .plan.plan-highlight .plan-title {
+  background-color: orange;
+  color: #fff;
+}
+
+#plans_area .container .plans .plan.plan-highlight .plan-cta a {
+  background-color: orange;
+  color: #fff;
+}
+
+#plans_area .container .plans .plan.plan-highlight .plan-cta a:hover {
+  background-color: #222 !important;
+}
+
+#plans_area .container .plans .plan .plan-padding {
+  padding: 40px;
+}
+
+#plans_area .container .plans .plan .plan-padding .plan-price {
+  margin-bottom: 45px;
+}
+
+#plans_area .container .plans .plan .plan-padding .plan-price div:first-child {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+#plans_area .container .plans .plan .plan-padding .plan-details {
+  text-align: left;
+  display: inline-block;
+}
+
+#plans_area .container .plans .plan .plan-padding .plan-details .plan-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#plans_area .container .plans .plan .plan-padding .plan-details .plan-item .plan-item-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #5cb85c;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#plans_area .container .plans .plan .plan-padding .plan-details .plan-item .plan-item-icon i {
+  font-size: 11px;
+}
+
+#plans_area .container .plans .plan .plan-cta {
+  margin-top: 20px;
+}
+
+#plans_area .container .plans .plan .plan-cta a {
+  display: block;
+  padding: 20px 40px;
+  background-color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0 0 3px 3px;
+  color: orange;
+}
+
+#plans_area .container .plans .plan .plan-cta a .bx, #plans_area .container .plans .plan .plan-cta a .bx, #plans_area .container .plans .plan .plan-cta a .bx, #plans_area .container .plans .plan .plan-cta a .bx, #plans_area .container .plans .plan .plan-cta a .bx {
+  margin-left: 5px;
+}
+
+#plans_area .container .plans .plan .plan-cta a:hover {
+  background-color: #dce1e5;
+}
+
+/* -----------------------About Us------------------- */
+
+#about-us .container .row .about-title {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#about-us .container .row .shadow .about-us_text {
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #000;
+  font-size: 15px;
+}
+
+#about-us .container .row .readmore {
+  padding: 10px;
+  width: 100px;
+  background: #051922;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: "OpenSans-Regular", sans-serif;
+  transition: 1s;
+}
+
+#about-us .container .row .readmore i {
+  display: none;
+}
+
+#about-us .container .row .readmore:hover {
+  width: 150px;
+}
+
+/* #about-us .container .row .readmore:hover  i{
+  display: inline;
+} */
+
+#about-us .container .row .shaow {
+  box-shadow: 5px 90px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#about-us .container .row .h-700 {
+  height: 500px;
+  padding: 30px;
+  background: #fff;
+}
+
+/* #about-us .container .row .col-md-6 .img{
+  /* position: relative;
+  margin-left: 50px; 
+} 
+*/
+
+/* ----------------------About us---------------- */
+
+#subscribe {
+  width: 100%;
+  height: 200px;
+  background: url("../img/subscribe.jpeg");
+  background-size: cover;
+  margin-top: 150px;
+}
+
+#subscribe .subscribe {
+  padding: 20px 0px;
+}
+
+#subscribe .subscribe h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subscribe .subscribe .btn-subscribe {
+  margin-top: 20px;
+  background: #222;
+  color: orange;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0px;
+  width: 200px !important;
+  padding: 10px;
+  border: none;
+}
+
+#subscribe .subscribe .btn-subscribe:hover {
+  border: none;
+}
+
+/* --------------Shop Area----------------------- */
+
+.shop {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(5, 25, 34, 0.7), rgba(5, 25, 34, 0.7)), url('../img/pepperoni-pizza-in-box.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.products {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.products .container {
+  justify-content: center;
+}
+
+.products .container h3 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Poppins-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.products .row .product-items {
+  height: 540px;
+  box-shadow: 0 0 20px #e4e4e4;
+  margin-left: 10px;
+  margin-top: 20px;
+  transition: .5s;
+}
+
+.products .row .product-items:hover {
+  box-shadow: none;
+}
+
+.products .row .product-items img {
+  margin-top: 50px;
+  width: 200px;
+}
+
+.products .row .product-items h4, h5 {
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.products .row .product-items button {
+  font-family: "Poppins-Regular", sans-serif;
+  width: 150px;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: orange;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* --------------End Shop Area---------------- */
+
+/* Cart Area */
+
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgb(255, 255, 255);
+  top: -70px;
+  right: 20px;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.store-item-icon {
+  cursor: pointer;
+}
+
+.cart h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.cart .cart-item-title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart span {
+  font-family: 'Poppins', sans-serif;
+}
+
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  /* transform: rotateY(-360deg); */
+}
+
+.item-img {
+  width: 50px;
+}
+
+/* Cart Area */
+
+/*------------------- Blog Area--------------------- */
+
+#blog {
+  margin-top: 150px;
+}
+
+#blog .row .card-group .card {
+  border: none;
+}
+
+.article {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1)
+}
+
+.article .article-header {
+  height: 170px;
+  position: relative;
+  overflow: hidden
+}
+
+.article .article-header .article-image {
+  background-color: #fbfbfb;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+
+.article .article-header .article-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.65) 98%, rgba(0, 0, 0, 0.65) 100%);
+  padding: 10px
+}
+
+.article .article-header .article-title h2 {
+  font-size: 25px;
+  line-height: 24px
+}
+
+.article .article-header .article-title h2 a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff
+}
+
+.article .article-details {
+  background-color: #fff;
+  padding: 20px;
+  line-height: 24px
+}
+
+.article .article-details small {
+  font-family: "Poppins-regular", sans-serif;
+}
+
+.article .article-details small a {
+  text-decoration: none;
+  color: #051922;
+}
+
+.article .article-details .article-cta {
+  text-align: center
+}
+
+.article .article-details .article-cta .btn-primary {
+  border-radius: 0px;
+  background-color: #051922;
+}
+
+.article .article-header .article-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px
+}
+
+.article .article-header .article-badge .article-badge-item {
+  padding: 7px 15px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 12px
+}
+
+.article .article-header .article-badge .article-badge-item .ion, .article .article-header .article-badge .article-badge-item .fas, .article .article-header .article-badge .article-badge-item .far, .article .article-header .article-badge .article-badge-item .fab, .article .article-header .article-badge .article-badge-item .fal {
+  margin-right: 3px
+}
+
+.article.article-style-b .article-details .article-title {
+  margin-bottom: 10px
+}
+
+.article.article-style-b .article-details .article-title h2 {
+  line-height: 22px
+}
+
+.article.article-style-b .article-details .article-title a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.article.article-style-b .article-details p {
+  color: #34395e
+}
+
+.article.article-style-b .article-details .article-cta {
+  text-align: right;
+}
+
+.article.article-style-b .article-details .article-cta a {
+  text-decoration: none;
+  color: #051922;
+}
+
+.article.article-style-c .article-header {
+  height: 233px
+}
+
+.article.article-style-c .article-details .article-category {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  color: #34395e
+}
+
+.article.article-style-c .article-details .article-category a {
+  font-size: 10px;
+  color: #34395e;
+  font-weight: 700
+}
+
+.article.article-style-c .article-details .article-title {
+  margin-bottom: 10px
+}
+
+.article.article-style-c .article-details .article-title h2 {
+  line-height: 22px
+}
+
+.article.article-style-c .article-details .article-title a {
+  font-size: 16px;
+  font-weight: 600
+}
+
+.article.article-style-c .article-details p {
+  color: #34395e
+}
+
+.article.article-style-c .article-user {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px
+}
+
+.article.article-style-c .article-user img {
+  border-radius: 50%;
+  float: left;
+  width: 45px;
+  margin-right: 15px
+}
+
+.article.article-style-c .article-user .user-detail-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.article.article-style-c .article-user .user-detail-name a {
+  font-weight: 700
+}
+
+/*------------------------- Cart Area--------------------- */
+
+.cart {
+  margin-top: 150px;
+}
+
+.cart-title {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.cart-details {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.cart-price {
+  font-family: "Work Sans", sans-serif;
+  color: #051922 !important;
+  font-size: 30px;
+}
+
+.cart-price strike {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cart .bxs-star {
+  color: orange;
+}
+
+.cart .cart-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+.cart .bx-cart {
+  font-size: 20px;
+}
+
+.cart .quantity {
+  display: flex;
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.cart .quantity button {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+  background-color: #051922;
+  color: #fff;
+  border: none;
+}
+
+.cart .quantity input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.discount {
+  background-color: #051922;
+  width: 50px;
+  height: 300px;
+  position: fixed;
+  transform: rotate(-50deg);
+  bottom: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.discount p {
+  color: #fff;
+  text-align: center;
+  transform: rotate(90deg);
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.web-chat {
+  background-color: #051922;
+  width: 50px;
+  height: 50px;
+  right: 32px;
+  position: fixed;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.web-chat i {
+  color: white;
+  font-size: 30px;
+}
+
+.web-chat::after {
+  content: '1';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: red;
+  transform: translateY(-20px);
+  margin-left: 15px;
+  text-align: center;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+/* .web-chat-area .chats{
+  width: 300px;
+  height: 400px;
+  background: #051922;
+  right: 100px;
+  position: fixed;
+  bottom: 100px;
+} */
+
+/* ----------------------Cart Area---------------------------- */
+
+@media (max-width: 575.98px) {
+  .article .article-style-c .article-header {
+    height: 225px
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .article {
+    margin-bottom: 40px
+  }
+  .article .article-header {
+    height: 195px !important
+  }
+  .article.article-style-c .article-header {
+    height: 155px
+  }
+}
+
+@media (max-width: 1024px) {
+  .article.article-style-c .article-header {
+    height: 216px
+  }
+  .article .article-header {
+    height: 155px
+  }
+}
+
+/* ------------End Blog Area-------------------- */
+
+/*-------------------------Contact us------------------------------ */
+
+#contact-us {
+  margin-top: 150px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to left, #13506c, rgb(5, 25, 35));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+}
+
+#contact-us .container .contact-title {
+  color: white;
+  font-family: "Poppins-regular", sans-serif;
+}
+
+#contact-us .container label {
+  font-family: "Poppins-regular", sans-serif;
+}
+
+#contact-us .container form {
+  margin-top: 50px;
+}
+
+#contact-us .container form .icons {
+  position: absolute;
+  right: 28px;
+  margin-top: -30px;
+}
+
+#contact-us .container form .icons .icon1 {
+  color: #e74e3c;
+  font-size: 18px;
+  display: none;
+  margin-left: -10px;
+}
+
+#contact-us .container form .icons .icon2 {
+  color: #27ae60;
+  font-size: 18px;
+  display: none;
+}
+
+#contact-us .container form .error-text {
+  position: relative;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  background: #e74e3c;
+  color: #fceae8;
+  font-size: 18px;
+  padding: 8px;
+  display: none;
+}
+
+#contact-us .container form .error-text::before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  background: #e74e3c;
+  right: 20px;
+  transform: rotate(45deg);
+  top: -7px;
+}
+
+#contact-us .container form .form-control {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent !important;
+  border-radius: 0px;
+  color: #fff;
+  font-family: "Poppins-regular", sans-serif;
+  padding: 0px 0px 15px 0px;
+  margin-top: 30px;
+}
+
+#contact-us .container form .inputControl.error .form-control {
+  border-bottom: 1px solid #ff3860;
+}
+
+#contact-us .container form .inputControl.success .form-control {
+  border-bottom: 1px solid #09c372;
+}
+
+#contact-us .container form .error {
+  color: #ff3860;
+  font-family: "Poppins-regular", sans-serif;
+}
+
+#contact-us .container form .form-control::placeholder {
+  color: #fff !important;
+}
+
+#contact-us .container form .form-control:focus {
+  box-shadow: none;
+}
+
+#contact-us .container form .contact-btn {
+  width: 100%;
+  background: orange;
+  border: none;
+  border-radius: 0px !important;
+  height: 50px;
+  margin-top: 50px;
+}
+
+/* Contact us Page */
+
+.contact-banner {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to bottom, rgba(5, 25, 34, 0.7), rgba(5, 25, 34, 0.7)), url("../img/pizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-banner a {
+  color: white;
+}
+
+.main-contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-contact .container h1 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(5, 25, 34);
+}
+
+.main-contact .container ul li i {
+  font-size: 18px;
+  color: rgb(5, 25, 34);
+}
+
+.main-contact .container ul {
+  margin-top: 20px;
+}
+
+.main-contact .container ul li {
+  list-style-type: none;
+  font-family: "poppins", sans-serif;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.contact-banner h3 {
+  font-size: 40px;
+  color: white;
+}
+
+.main-contact .container .row #form h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-contact .container .row #form p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+}
+
+.main-contact .container .row #form input, .main-contact .container .row #form textarea {
+  margin-bottom: 10px;
+  width: 500px;
+  border-radius: 0px;
+  border: 1px solid rgb(5, 25, 34);
+}
+
+.main-contact .container .row #form .contact-btn {
+  border-radius: 0px;
+  background-color: rgb(5, 25, 34);
+  outline: none;
+}
+
+.main-contact .map-area {
+  margin-top: 100px;
+}
+
+/* ------------- Error Section ------------------- */
+
+#contact-us .container form #error {
+  display: none;
+}
+
+/* ----------------------------End Contact us------------------------- */
+
+/*----------------- Get Started Area -----------------------------*/
+
+#get-started {
+  width: 100%;
+  height: 200px;
+  background: #051922;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+}
+
+/*----------------- End Get Started Area -----------------------------*/
+
+/* -------------- Footer--------------------------- */
+
+#footer {
+  width: 100%;
+  background: #051922;
+  height: 600px;
+  margin-top: 150px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer .container {
+  padding: 70px 100px !important;
+}
+
+#footer .container .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #051922;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#footer .container .social-media i {
+  font-size: 15px;
+}
+
+#footer .container h4 {
+  font-size: 20px;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+#footer .container .news-letter {
+  background: orange;
+  font-size: 14px;
+  padding: 7px 5px;
+  border: none;
+}
+
+#footer .container .news-letter:hover {
+  color: #000;
+  border: none;
+}
+
+#footer .container p, ul, li {
+  font-size: 14px;
+}
+
+#footer .container .navbar-nav .nav-item .nav-link:hover {
+  transition: .5s;
+  margin-left: 10px;
+}
+
+#footer .container .copyright {
+  margin-top: 200px;
+}
+
+/* -----------------Footer---------------------- */
+
+.back-to-top {
+  background-color: #051922;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+  color: #fff;
+}
+
+.back-to-top:hover {
+  color: #fff;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  bottom: 32px;
+  pointer-events: auto;
+}
+
+/* 
+.side-bar-social{
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  bottom: 5px;
+  padding: 20px;
+  opacity: 0;
+  transition: all .4s;
+  left: -50px;
+}
+.side-bar-social.active{
+  opacity: 1;
+  left: 30px;
+} */
+
+/* --------------Shop Area----------------------- */
+
+/* ---------------------Media Area */
+
+@media screen and (max-width: 599px) {
+  header {
+    height: 600px;
+  }
+  .navbar .navbar-nav .nav-item .btn-primary {
+    margin-top: 10px;
+    width: 100%;
+  }
+  header .banner_area {
+    width: 100%;
+    padding: 0px;
+    height: 300px;
+    margin-top: 150px;
+  }
+  header .banner_area h1 {
+    font-size: 35px;
+  }
+  #how-it-works .container .text_area, #menu_area .container .text_area, #plans_area .container .plans .text_area, #blog .container .text_area {
+    width: 100%;
+  }
+  #how-it-works .container .text_area h2, #menu_area .container .text_area h2, #plans_area .container .plans .text_area h2, #blog .container .text_area h2 {
+    font-size: 40px;
+  }
+  #how-it-works .container .text_area p, #menu_area .container .text_area p, #plans_area .container .plans .text_area p {
+    font-size: 13px;
+  }
+  #menu_area .container .btn-secondary {
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  #contact-us {
+    height: auto;
+  }
+  #contact-us .container .contact-title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  #footer {
+    height: 100% !important;
+  }
+  #footer .container {
+    padding: 30px 30px !important;
+  }
+  #footer .container .row .col-md-4, #footer .container .row .col-md-3 {
+    margin-bottom: 50px;
+  }
+  #footer .container .news-letter {
+    padding: 10px 10px;
+    margin-top: 30px;
+  }
+  .cart-title {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .cart-details {
+    font-size: 15px;
+  }
+  .cart-img img {
+    width: 330px;
+  }
+  .cart-btn {
+    margin-bottom: 100px;
+  }
+  .discount {
+    padding: 20px;
+  }
+  .discount p {
+    font-size: 15px;
+    margin-top: 40px;
+  }
+  .main-contact .container .row #form input, .main-contact .container .row #form textarea {
+    width: 350px;
+  }
+}

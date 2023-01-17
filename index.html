@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home | myFood</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">myFood</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./shop.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- <button class="btn btn-primary login">Login</button> -->
+                <a href="#" id="cart-info"><i class="bx bx-cart"></i><span class="cart-item" id="item-count">0</span>  </a>
+              </li>
+              <li class="nav-item">
+                  <i class="bx bx-search"></i>
+              </li>
+              <li class="nav-item">
+                    <a href="login.html" target="_blank"><i class="bx bx-user"></i></a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner Area -->
+      <div class="banner_area"  data-scrollax-parent="true">
+        <h1>Are you Hungry?</h1>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptates
+          minus ipsa delectus, eveniet repellendus molestiae cum? Obcaecati at
+          quod provident facilis enim ad, soluta eaque rerum ipsa maiores
+          debitis?
+        </p>
+        <div class="animated fadeInUp text-center scroll-down">
+           <a href="#how-it-works"><i class="bx bx-chevron-down chevron-down"  onclick="getStarted()"></i></a>
+        </div>
+      </div>
+    </header>
+    <div id="cart" class="cart">
+        <h3>Cart Item</h3>
+      <span id="total">
+          <h4>Total: <span>$</span>
+          </span>
+       <span id="cart-item-total"><span></span></span>
+       <button class="btn btn-primary mt-5" onclick="payWithPaystack()" >Proceed to checkout</button>
+    </div>
+    <section id="how-it-works">
+      <div class="container">
+         <div class="text_area" data-aos="fade-up">
+            <h2 class="text-center">How it<span style="color: orange"> Works </span></h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae tempore tempora accusamus dicta sit voluptatem, voluptat</p>
+         </div>
+        <div class="row order_area">
+          <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+            <svg
+              width="100px"
+              height="100px"
+              viewBox="0 0 429 512"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+              <title>menu</title>
+              <desc>Created with Sketch.</desc>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="menu" fill="orange">
+                  <path
+                    d="M135.746094,380.710938 C134.757812,382.507812 133.226562,383.046875 131.789062,383.046875 C130.351562,383.046875 128.914062,382.507812 127.925781,380.710938 L117.585938,361.292969 L117.585938,400.664062 C117.585938,403.09375 114.621094,404.351562 111.746094,404.351562 C108.777344,404.351562 105.902344,403.09375 105.902344,400.664062 L105.902344,344.480469 C105.902344,340.167969 108.777344,338.640625 111.746094,338.640625 C115.96875,338.640625 117.859375,339.539062 120.824219,344.839844 L131.882812,364.976562 L142.9375,344.839844 C145.90625,339.539062 147.882812,338.640625 152.109375,338.640625 C155.074219,338.640625 157.949219,340.167969 157.949219,344.480469 L157.949219,400.664062 C157.949219,403.09375 154.984375,404.351562 152.109375,404.351562 C149.140625,404.351562 146.265625,403.09375 146.265625,400.664062 L146.265625,362.011719 L135.746094,380.710938 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M190.484375,366.863281 L204.148438,366.863281 C206.484375,366.863281 207.832031,369.113281 207.832031,371.539062 C207.832031,373.605469 206.664062,376.035156 204.148438,376.035156 L190.484375,376.035156 L190.484375,394.101562 L215.921875,394.101562 C218.261719,394.101562 219.609375,396.527344 219.609375,399.316406 C219.609375,401.742188 218.441406,404.351562 215.921875,404.351562 L183.921875,404.351562 C181.316406,404.351562 178.796875,403.089844 178.796875,400.664062 L178.796875,342.324219 C178.796875,339.898438 181.3125,338.636719 183.921875,338.636719 L215.921875,338.636719 C218.441406,338.636719 219.609375,341.246094 219.609375,343.671875 C219.609375,346.460938 218.261719,348.886719 215.921875,348.886719 L190.484375,348.886719 L190.484375,366.863281 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M267.519531,400.664062 L248.191406,364.527344 L248.191406,400.664062 C248.191406,403.09375 245.226562,404.351562 242.347656,404.351562 C239.382812,404.351562 236.503906,403.09375 236.503906,400.664062 L236.503906,342.324219 C236.503906,339.808594 239.382812,338.640625 242.347656,338.640625 C246.574219,338.640625 248.28125,339.539062 251.070312,344.839844 L268.417969,378.371094 L268.417969,342.234375 C268.417969,339.71875 271.292969,338.636719 274.261719,338.636719 C277.136719,338.636719 280.101562,339.714844 280.101562,342.234375 L280.101562,400.664062 C280.101562,403.089844 277.136719,404.351562 274.261719,404.351562 C271.472656,404.351562 269.046875,403.453125 267.519531,400.664062 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M332.148438,342.234375 C332.148438,339.71875 335.023438,338.640625 337.988281,338.640625 C340.867188,338.640625 343.832031,339.71875 343.832031,342.234375 L343.832031,384.304688 C343.832031,399.316406 334.304688,404.890625 322.257812,404.890625 C310.121094,404.890625 300.683594,399.316406 300.683594,384.304688 L300.683594,342.234375 C300.683594,339.71875 303.558594,338.640625 306.527344,338.640625 C309.402344,338.640625 312.367188,339.71875 312.367188,342.234375 L312.367188,384.304688 C312.367188,391.316406 316.054688,394.644531 322.257812,394.644531 C328.460938,394.644531 332.144531,391.316406 332.144531,384.304688 L332.144531,342.234375 L332.148438,342.234375 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M355.257812,422.148438 L312.527344,422.148438 C308.332031,422.148438 304.933594,425.546875 304.933594,429.738281 C304.933594,433.933594 308.332031,437.328125 312.527344,437.328125 L355.257812,437.328125 C359.453125,437.328125 362.847656,433.933594 362.847656,429.738281 C362.847656,425.546875 359.453125,422.148438 355.257812,422.148438 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M277.207031,422.148438 L104.265625,422.148438 C100.074219,422.148438 96.675781,425.546875 96.675781,429.738281 C96.675781,433.933594 100.074219,437.328125 104.265625,437.328125 L277.207031,437.328125 C281.402344,437.328125 284.796875,433.933594 284.796875,429.738281 C284.796875,425.546875 281.402344,422.148438 277.207031,422.148438 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M355.257812,306.242188 L104.265625,306.242188 C100.074219,306.242188 96.675781,309.640625 96.675781,313.832031 C96.675781,318.023438 100.074219,321.421875 104.265625,321.421875 L355.257812,321.421875 C359.453125,321.421875 362.847656,318.023438 362.847656,313.832031 C362.847656,309.640625 359.453125,306.242188 355.257812,306.242188 Z"
+                    id="Path"
+                  ></path>
+                  <path
+                    d="M351.035156,212.128906 L343.667969,212.128906 C340.824219,159.828125 302.59375,116.789062 252.558594,106.601562 L254.023438,92.597656 C254.503906,88.027344 253.011719,83.449219 249.9375,80.039062 C246.863281,76.625 242.464844,74.667969 237.871094,74.667969 L221.65625,74.667969 C217.058594,74.667969 212.664062,76.628906 209.585938,80.039062 C206.511719,83.453125 205.023438,88.03125 205.503906,92.597656 L206.96875,106.601562 C156.933594,116.789062 118.703125,159.824219 115.859375,212.125 L108.492188,212.125 C101.976562,212.125 96.675781,217.425781 96.675781,223.941406 L96.675781,239.605469 C96.675781,246.121094 101.976562,251.421875 108.492188,251.421875 L351.03125,251.421875 C357.546875,251.421875 362.847656,246.121094 362.847656,239.605469 L362.847656,223.941406 C362.847656,217.429688 357.550781,212.128906 351.035156,212.128906 Z M220.867188,90.199219 C221.078125,89.96875 221.339844,89.851562 221.65625,89.851562 L237.871094,89.851562 C238.183594,89.851562 238.449219,89.96875 238.660156,90.199219 C238.871094,90.433594 238.960938,90.710938 238.925781,91.019531 L237.507812,104.582031 C234.949219,104.410156 232.367188,104.3125 229.765625,104.3125 C227.160156,104.3125 224.582031,104.410156 222.023438,104.582031 L220.601562,91.019531 C220.570312,90.710938 220.660156,90.433594 220.867188,90.199219 Z M347.667969,236.242188 L111.859375,236.242188 L111.859375,227.308594 L143.847656,227.308594 C148.042969,227.308594 151.441406,223.910156 151.441406,219.71875 C151.441406,215.527344 148.042969,212.128906 143.847656,212.128906 L131.070312,212.128906 C134.3125,160.503906 177.335938,119.496094 229.761719,119.496094 C282.191406,119.496094 325.214844,160.503906 328.457031,212.128906 L179.167969,212.128906 C174.972656,212.128906 171.578125,215.527344 171.578125,219.71875 C171.578125,223.910156 174.972656,227.308594 179.167969,227.308594 L347.667969,227.308594 L347.667969,236.242188 Z"
+                    id="Shape"
+                    fill-rule="nonzero"
+                  ></path>
+                  <path
+                    d="M409.484375,0 L50.042969,0 C39.386719,0 30.714844,8.671875 30.714844,19.328125 L30.714844,33.039062 L23.632812,33.039062 C10.601562,33.039062 2.84217094e-14,43.644531 2.84217094e-14,56.675781 C2.84217094e-14,69.707031 10.601562,80.3125 23.632812,80.3125 L30.714844,80.3125 L30.714844,112.769531 L23.632812,112.769531 C10.601562,112.769531 2.84217094e-14,123.371094 2.84217094e-14,136.40625 C2.84217094e-14,149.4375 10.601562,160.039062 23.632812,160.039062 L30.714844,160.039062 L30.714844,192.5 L23.632812,192.5 C10.601562,192.5 2.84217094e-14,203.101562 2.84217094e-14,216.136719 C2.84217094e-14,229.167969 10.601562,239.769531 23.632812,239.769531 L30.714844,239.769531 L30.714844,272.230469 L23.632812,272.230469 C10.601562,272.230469 2.84217094e-14,282.832031 2.84217094e-14,295.863281 C2.84217094e-14,308.898438 10.601562,319.5 23.632812,319.5 L30.714844,319.5 L30.714844,351.960938 L23.632812,351.960938 C10.601562,351.960938 2.84217094e-14,362.5625 2.84217094e-14,375.59375 C2.84217094e-14,388.628906 10.601562,399.230469 23.632812,399.230469 L30.714844,399.230469 L30.714844,431.691406 L23.632812,431.691406 C10.601562,431.691406 2.84217094e-14,442.292969 2.84217094e-14,455.324219 C2.84217094e-14,468.355469 10.601562,478.960938 23.632812,478.960938 L30.714844,478.960938 L30.714844,492.671875 C30.714844,503.328125 39.386719,512 50.042969,512 L409.484375,512 C420.140625,512 428.816406,503.328125 428.816406,492.671875 L428.816406,19.328125 C428.816406,8.671875 420.140625,-5.68434189e-14 409.484375,0 Z M30.710938,65.132812 L23.632812,65.132812 C18.972656,65.132812 15.179688,61.339844 15.179688,56.675781 C15.179688,52.015625 18.972656,48.222656 23.632812,48.222656 L30.710938,48.222656 L30.710938,65.132812 Z M30.710938,144.859375 L23.632812,144.859375 C18.972656,144.859375 15.179688,141.066406 15.179688,136.40625 C15.179688,131.742188 18.972656,127.953125 23.632812,127.953125 L30.710938,127.953125 L30.710938,144.859375 Z M30.710938,224.589844 L23.632812,224.589844 C18.972656,224.589844 15.179688,220.796875 15.179688,216.136719 C15.179688,211.472656 18.972656,207.679688 23.632812,207.679688 L30.710938,207.679688 L30.710938,224.589844 Z M30.710938,304.320312 L23.632812,304.320312 C18.972656,304.320312 15.179688,300.527344 15.179688,295.863281 C15.179688,291.203125 18.972656,287.410156 23.632812,287.410156 L30.710938,287.410156 L30.710938,304.320312 Z M30.710938,384.046875 L23.632812,384.046875 C18.972656,384.046875 15.179688,380.257812 15.179688,375.59375 C15.179688,370.933594 18.972656,367.140625 23.632812,367.140625 L30.710938,367.140625 L30.710938,384.046875 Z M30.710938,463.777344 L23.632812,463.777344 C18.972656,463.777344 15.179688,459.984375 15.179688,455.324219 C15.179688,450.660156 18.972656,446.871094 23.632812,446.871094 L30.710938,446.871094 L30.710938,463.777344 Z M413.632812,492.667969 C413.632812,494.957031 411.773438,496.820312 409.484375,496.820312 L50.042969,496.820312 C47.753906,496.820312 45.894531,494.957031 45.894531,492.667969 L45.894531,19.328125 C45.894531,17.042969 47.753906,15.179688 50.042969,15.179688 L409.484375,15.179688 C411.773438,15.179688 413.632812,17.042969 413.632812,19.328125 L413.632812,492.667969 Z"
+                    id="Shape"
+                    fill-rule="nonzero"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <h3 class="text-center">Place Order</h3>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem in totam dolores.</p>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">   
+            <svg width="100px" height="100px" viewBox="0 0 386 411" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+            <title>cooking</title>
+            <desc>Created with Sketch.</desc>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="cooking" fill="#000" fill-rule="nonzero">
+                    <path d="M341.938,17.072 C338.033,13.167 338.033,6.835 341.938,2.93 C345.844,-0.976 352.174,-0.976 356.081,2.93 L357.426,4.274 C361.331,8.179 361.331,14.511 357.426,18.416 C355.473,20.369 352.914,21.345 350.355,21.345 C347.796,21.345 345.237,20.369 343.284,18.416 L341.938,17.072 Z M340.593,128.427 C356.54,128.427 369.515,141.401 369.515,157.347 C369.515,173.293 356.54,186.267 340.593,186.267 C324.646,186.267 311.672,173.293 311.672,157.347 C311.672,141.401 324.646,128.427 340.593,128.427 Z M340.593,148.427 C335.674,148.427 331.672,152.429 331.672,157.347 C331.672,162.266 335.674,166.267 340.593,166.267 C345.513,166.267 349.515,162.266 349.515,157.347 C349.515,152.429 345.513,148.427 340.593,148.427 Z M385.905,273.341 L385.905,285.331 C385.905,300.953 373.196,313.662 357.575,313.662 L349.243,313.662 L349.243,367.577 C349.243,391.282 329.958,410.567 306.253,410.567 L80.315,410.567 C56.611,410.567 37.326,391.282 37.326,367.577 L37.326,313.662 L28.994,313.662 C13.372,313.662 0.663,300.953 0.663,285.331 L0.663,273.341 C0.663,257.719 13.372,245.01 28.994,245.01 L37.326,245.01 L37.326,215.459 C37.326,209.936 41.804,205.459 47.326,205.459 L339.243,205.459 C344.765,205.459 349.243,209.936 349.243,215.459 L349.243,245.01 L357.575,245.01 C373.196,245.01 385.905,257.719 385.905,273.341 Z M37.325,265.01 L28.993,265.01 C24.399,265.01 20.662,268.747 20.662,273.341 L20.662,285.331 C20.662,289.925 24.399,293.662 28.993,293.662 L37.325,293.662 L37.325,265.01 Z M329.242,225.459 L57.325,225.459 L57.325,367.577 C57.325,380.254 67.638,390.567 80.314,390.567 L306.252,390.567 C318.929,390.567 329.242,380.254 329.242,367.577 L329.242,225.459 Z M365.905,273.341 C365.905,268.747 362.168,265.01 357.575,265.01 L349.243,265.01 L349.243,293.662 L357.575,293.662 C362.168,293.662 365.905,289.925 365.905,285.331 L365.905,273.341 Z M314.242,80.148 C316.8,80.148 319.358,79.172 321.31,77.222 L322.656,75.877 C326.563,71.973 326.565,65.642 322.661,61.735 C318.759,57.827 312.426,57.826 308.519,61.73 L307.173,63.075 C303.266,66.979 303.264,73.31 307.168,77.217 C309.121,79.171 311.682,80.148 314.242,80.148 Z M231.356,185.687 C231.356,191.21 235.834,195.687 241.356,195.687 C246.878,195.687 251.356,191.21 251.356,185.687 C251.356,177.788 257.783,171.361 265.681,171.361 C273.58,171.361 280.007,177.788 280.007,185.687 C280.007,191.21 284.485,195.687 290.007,195.687 C295.529,195.687 300.007,191.21 300.007,185.687 C300.007,166.76 284.609,151.361 265.681,151.361 C246.754,151.361 231.356,166.759 231.356,185.687 Z M44.58,170.719 C43.309,165.344 46.636,159.957 52.011,158.686 L160.647,133.001 L158.731,124.892 C155.137,109.689 164.582,94.397 179.784,90.804 L191.452,88.046 C206.649,84.452 221.946,93.895 225.541,109.097 L227.459,117.206 L336.094,91.52 C341.467,90.251 346.856,93.576 348.126,98.951 C349.397,104.326 346.07,109.713 340.695,110.984 L56.613,178.15 C55.84,178.333 55.065,178.421 54.303,178.421 C49.773,178.42 45.668,175.32 44.58,170.719 Z M178.194,120.291 L180.111,128.399 L207.995,121.806 L206.078,113.698 C205.173,109.87 201.744,107.283 197.971,107.283 C197.338,107.283 196.697,107.356 196.054,107.507 L184.386,110.266 C179.914,111.324 177.137,115.82 178.194,120.291 Z" id="Shape"></path>
+                </g>
+            </g>
+        </svg>
+        <h3 class="text-center">Cook</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quia laudantium quisquam ex doloribus</p>
+    </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">   
+            <svg width="100px" height="100px" viewBox="0 0 386 411" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+            <title>cooking</title>
+            <desc>Created with Sketch.</desc>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="cooking" fill="orange" fill-rule="nonzero">
+                    <path d="M341.938,17.072 C338.033,13.167 338.033,6.835 341.938,2.93 C345.844,-0.976 352.174,-0.976 356.081,2.93 L357.426,4.274 C361.331,8.179 361.331,14.511 357.426,18.416 C355.473,20.369 352.914,21.345 350.355,21.345 C347.796,21.345 345.237,20.369 343.284,18.416 L341.938,17.072 Z M340.593,128.427 C356.54,128.427 369.515,141.401 369.515,157.347 C369.515,173.293 356.54,186.267 340.593,186.267 C324.646,186.267 311.672,173.293 311.672,157.347 C311.672,141.401 324.646,128.427 340.593,128.427 Z M340.593,148.427 C335.674,148.427 331.672,152.429 331.672,157.347 C331.672,162.266 335.674,166.267 340.593,166.267 C345.513,166.267 349.515,162.266 349.515,157.347 C349.515,152.429 345.513,148.427 340.593,148.427 Z M385.905,273.341 L385.905,285.331 C385.905,300.953 373.196,313.662 357.575,313.662 L349.243,313.662 L349.243,367.577 C349.243,391.282 329.958,410.567 306.253,410.567 L80.315,410.567 C56.611,410.567 37.326,391.282 37.326,367.577 L37.326,313.662 L28.994,313.662 C13.372,313.662 0.663,300.953 0.663,285.331 L0.663,273.341 C0.663,257.719 13.372,245.01 28.994,245.01 L37.326,245.01 L37.326,215.459 C37.326,209.936 41.804,205.459 47.326,205.459 L339.243,205.459 C344.765,205.459 349.243,209.936 349.243,215.459 L349.243,245.01 L357.575,245.01 C373.196,245.01 385.905,257.719 385.905,273.341 Z M37.325,265.01 L28.993,265.01 C24.399,265.01 20.662,268.747 20.662,273.341 L20.662,285.331 C20.662,289.925 24.399,293.662 28.993,293.662 L37.325,293.662 L37.325,265.01 Z M329.242,225.459 L57.325,225.459 L57.325,367.577 C57.325,380.254 67.638,390.567 80.314,390.567 L306.252,390.567 C318.929,390.567 329.242,380.254 329.242,367.577 L329.242,225.459 Z M365.905,273.341 C365.905,268.747 362.168,265.01 357.575,265.01 L349.243,265.01 L349.243,293.662 L357.575,293.662 C362.168,293.662 365.905,289.925 365.905,285.331 L365.905,273.341 Z M314.242,80.148 C316.8,80.148 319.358,79.172 321.31,77.222 L322.656,75.877 C326.563,71.973 326.565,65.642 322.661,61.735 C318.759,57.827 312.426,57.826 308.519,61.73 L307.173,63.075 C303.266,66.979 303.264,73.31 307.168,77.217 C309.121,79.171 311.682,80.148 314.242,80.148 Z M231.356,185.687 C231.356,191.21 235.834,195.687 241.356,195.687 C246.878,195.687 251.356,191.21 251.356,185.687 C251.356,177.788 257.783,171.361 265.681,171.361 C273.58,171.361 280.007,177.788 280.007,185.687 C280.007,191.21 284.485,195.687 290.007,195.687 C295.529,195.687 300.007,191.21 300.007,185.687 C300.007,166.76 284.609,151.361 265.681,151.361 C246.754,151.361 231.356,166.759 231.356,185.687 Z M44.58,170.719 C43.309,165.344 46.636,159.957 52.011,158.686 L160.647,133.001 L158.731,124.892 C155.137,109.689 164.582,94.397 179.784,90.804 L191.452,88.046 C206.649,84.452 221.946,93.895 225.541,109.097 L227.459,117.206 L336.094,91.52 C341.467,90.251 346.856,93.576 348.126,98.951 C349.397,104.326 346.07,109.713 340.695,110.984 L56.613,178.15 C55.84,178.333 55.065,178.421 54.303,178.421 C49.773,178.42 45.668,175.32 44.58,170.719 Z M178.194,120.291 L180.111,128.399 L207.995,121.806 L206.078,113.698 C205.173,109.87 201.744,107.283 197.971,107.283 C197.338,107.283 196.697,107.356 196.054,107.507 L184.386,110.266 C179.914,111.324 177.137,115.82 178.194,120.291 Z" id="Shape"></path>
+                </g>
+            </g>
+        </svg>
+        <h3 class="text-center">Pickup / Deliver</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quia laudantium quisquam ex doloribus</p>
+    </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </section>
+    <section id="menu_area" id="menu">
+        <div class="container">
+            <div class="online_menu">
+                    <div class="text_area">
+                            <h2 class="text-center">Online <span style="color: orange">Menu</span></h2>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae tempore tempora accusamus dicta sit voluptatem, voluptat</p>
+                     </div>
+               <div class="inner_menu">
+                    <div class="row row-cols-1">
+                        <h3 class="text-center mb-4">Fruits</h3>
+                        <div class="card-group">
+                            <div class="card">
+                              <img class="card-img-top" src="./img/fruits/1.jpg" alt="Card image cap">
+                              <div class="card-body text-center">
+                                <h4 class="card-title">Cashew</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text item-price">#200</small>
+                                <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                              </div>
+                            </div>
+                            <div class="card">
+                                    <img class="card-img-top" src="./img/fruits/2.jpg" alt="Card image cap">
+                                    <div class="card-body text-center">
+                                      <h4 class="card-title">Mangoes</h4>
+                                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                    </div>
+                                    <div class="card-footer">
+                                      <small class="text item-price">#250</small>
+                                      <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                    </div>
+                                  </div>
+                            <div class="card">
+                              <img class="card-img-top" src="./img/fruits/product-img-5.jpg" alt="Card image cap">
+                              <div class="card-body text-center">
+                                <h4 class="card-title">Fresh Apple</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text item-price">#300</small>
+                                <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="./img/fruits/product-img-3.jpg" alt="Card image cap">
+                              <div class="card-body text-center">
+                                <h4 class="card-title">Fresh Orange</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text item-price">#500</small>
+                                <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="./img/fruits/guava.png" alt="Card image cap">
+                              <div class="card-body text-center">
+                                  <h4 class="card-title">Fresh Guava</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text item-price">#500</small>
+                                <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                              </div>
+                            </div>
+                          </div>
+                            <h3 class="text-center mb-4">Foods</h3>
+                                <div class="card-group">
+                                        <div class="card">
+                                          <img class="card-img-top" src="./img/jollof.jpg" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Jollof Rice</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#1,200</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                                <img class="card-img-top" src="./img/beans.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                  <h4 class="card-title">Beans</h4>
+                                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                  <small class="text item-price">#500</small>
+                                                  <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                                </div>
+                                              </div>
+                                        <div class="card">
+                                          <img class="card-img-top" src="./img/69.jpg" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Beans</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#500</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                          <img class="card-img-top" src="./img/ofada-rice.jpg" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Ofada Rice</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#500</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                          <img class="card-img-top" src="./img/eba-egusi.jpg" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Eba & Egusi Soup</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#500</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                                      </div>
+                        </div>
+                        <h3 class="text-center mb-4">Snacks</h3>
+                        <div class="card-group">
+                              
+                                <div class="card">
+                                        <img class="card-img-top" src="./img/burger-restaurant.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                          <h4 class="card-title">Beef Burger</h4>
+                                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                        </div>
+                                        <div class="card-footer">
+                                          <small class="text item-price">#500</small>
+                                          <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                        </div>
+                                      </div>
+                                 <div class="card">
+                                          <img class="card-img-top" src="./img/chicago-hot-dog.jpg" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Burger</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#500</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                                <img class="card-img-top" src="./img/pepperoni-pizza-in-box.jpg" alt="Card image cap">
+                                                <div class="card-body text-center">
+                                                  <h4 class="card-title">Pizza</h4>
+                                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                  <small class="text item-price">#500</small>
+                                                  <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                                </div>
+                                              </div>
+                                <div class="card">
+                                          <img class="card-img-top" src="./img/burger.png" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Beans</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#500</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                                <div class="card">
+                                          <img class="card-img-top" src="./img/251.jpg" alt="Card image cap">
+                                          <div class="card-body text-center">
+                                            <h4 class="card-title">Fries</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id volupt</p>
+                                          </div>
+                                          <div class="card-footer">
+                                            <small class="text item-price">#900</small>
+                                            <small class="text"><span class="store-item-icon"><i class="bx bx-cart"></i></span></small>
+                                          </div>
+                                        </div>
+                              </div>
+                        </div>
+                        <button class="btn btn-secondary"><a href="shop.html" style="text-decoration: none; color:white;">View Menu</a></button>
+               </div>
+            </div>
+        </div>
+      
+    </section>
+
+
+    <section id="plans_area">
+      <div class="container">
+      <div class="plans">
+        <div class="text_area">
+          <h2 class="text-center">Choose a<span style="color: orange"> Plans </span></h2>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae tempore tempora accusamus dicta sit voluptatem, voluptat</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="plan">
+                <div class="plan-title">SINGLE'S PACK</div>
+                <div class="plan-padding">
+                    <div class="plan-price">
+                        <div>#20,000</div>
+                        <div>per month</div>
+                    </div>
+                    <div class="plan-details">
+                        <div class="plan-item">
+                            <div class="plan-item-icon"><i class="bx bx-check"></i></div>
+                            <div class="plan-item-label">1 Packs of Fried Rice & Meat</div>
+                        </div>
+                        <div class="plan-item">
+                            <div class="plan-item-icon"><i class="bx bx-check"></i></div>
+                            <div class="plan-item-label">2 Bottles of Coca Cola</div>
+                        </div>
+  
+                        <div class="plan-item">
+                            <div class="plan-item-icon text-white"><i class="bx bx-time"></i></div>
+                            <div class="plan-item-label">20 Minutes Delivery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-cta">
+                    <a href="#">Subscribe <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="plan">
+                 <div class="plan plan-highlight">
+                    <div class="plan-title">COUPLE'S PACK</div>
+                    <div class="plan-padding">
+                        <div class="plan-price">
+                            <div>#30,000</div>
+                            <div>per month</div>
+                        </div>
+                        <div class="plan-details">
+                          <div class="plan-item">
+                              <div class="plan-item-icon"><i class="bx bx-check"></i></div>
+                              <div class="plan-item-label">2 Packs of Fried Rice & Meat</div>
+                          </div>
+                          <div class="plan-item">
+                              <div class="plan-item-icon"><i class="bx bx-check"></i></div>
+                              <div class="plan-item-label">4 Bottles of Coca Cola</div>
+                          </div>
+    
+                          <div class="plan-item">
+                              <div class="plan-item-icon text-white"><i class="bx bx-time"></i></div>
+                              <div class="plan-item-label">20 Minutes Delivery</div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="plan-cta">
+                        <a href="#">Subscribe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+              </div>
+               
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="plan">
+                    <div class="plan-title">FAMILY PACK</div>
+                    <div class="plan-padding">
+                        <div class="plan-price">
+                            <div>#40,000</div>
+                            <div>per month</div>
+                        </div>
+                        <div class="plan-details">
+                          <div class="plan-item">
+                              <div class="plan-item-icon"><i class="bx bx-check"></i></div>
+                              <div class="plan-item-label">5 Packs of Fried Rice & Meat</div>
+                          </div>
+                          <div class="plan-item">
+                              <div class="plan-item-icon"><i class="bx bx-check"></i></div>
+                              <div class="plan-item-label">6 Bottles of Coca Cola</div>
+                          </div>
+    
+                          <div class="plan-item">
+                              <div class="plan-item-icon text-white"><i class="bx bx-time"></i></div>
+                              <div class="plan-item-label">20 Minutes Delivery</div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="plan-cta">
+                        <a href="#">Subscribe <i class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </section>
+    <!-- About us Section -->
+    <section id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <img src="./img/banner.jpg" class="img-fluid img" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3 class="about-title">What you need to know about us</h3>
+              <p class="about-us_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere mollitia minus hic quod, molestiae rem nam magni! Assumenda, dolor alias itaque dicta tempore adipisci commodi sed dolore impedit. Numquam, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi sequi repellat, exercitationem possimus nobis omnis assumenda, minus dolorem modi culpa? Excepturi, a itaque. Dolor maxime voluptatem quis fugit qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae vitae non doloremque reiciendis, illum laborum esse error quos aperiam laudantium fuga culpa totam eligendi eveniet delectus laboriosam veniam eum velit?
+                  qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae vitae non doloremque reiciendis, illum laborum esse error quos aperiam 
+                  si sequi repellat, exercitationem possimus nobis omnis assumenda, minus dolorem modi culpa? Exceptu Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nihil, id vel dignissimos beatae repudiandae odit commodi necessitatibus eius quisquam iusto temporibus, ipsa doloremque nulla assumenda quod dicta placeat magnam?
+              </p>
+            <button class="readmore">Read more <i class="bx bx-right-arrow-alt"></i> </button>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- About us Section -->
+
+  <!-- Blog Section -->
+    <section id="blog">
+      <div class="container">
+          <div class="text_area">
+              <h2 class="text-center">Recently from <span style="color: orange"> Blog </span></h2>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro recusandae tempore tempora accusamus dicta sit voluptatem, voluptat</p>
+            </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up">
+                <article class="article article-style-b">
+                  <div class="article-header">
+                    <div class="article-image" style="background-image: url('./img/fruits/product-img-3.jpg')">
+                    </div>
+                    <div class="article-title">
+                      <h2><a href="#">Orange</a></h2>
+                    </div>
+                  </div>
+                  <div class="article-details">
+                      <small>July 18, 2022 | Posted by<a href="#"> Admin </a><i class="bx bx-comment">3</i></small>
+                    <h5>Importance of Orange</h5>
+                    <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree</p>
+                    <div class="article-cta">
+                      <a href="#">Read More <i class="bx bx-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up"  data-aos-delay="200">
+                <article class="article article-style-b">
+                  <div class="article-header">
+                    <div class="article-image" style="background-image: url('./img/fruits/5.jpg')">
+                    </div>
+                    <div class="article-title">
+                      <h2><a href="#">Banana</a></h2>
+                    </div>
+                  </div>
+                  <div class="article-details">
+                      <small>July 20, 2022 | Posted by<a href="#"> Admin </a><i class="bx bx-comment">3</i></small>
+                    <h5>Why you should eat Banana</h5>
+                    <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree</p>
+                    <div class="article-cta">
+                      <a href="#">Read More <i class="bx bx-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up"  data-aos-delay="400">
+                <article class="article article-style-b">
+                  <div class="article-header">
+                    <div class="article-image" style="background-image: url('./img/fruits/2.jpg')">
+                    </div>
+                    <div class="article-title">
+                      <h2><a href="#">Mangoes</a></h2>
+                    </div>
+                  </div>
+                  <div class="article-details">
+                      <small>June 20, 2022 | Posted by<a href="#"> Admin </a><i class="bx bx-comment">3</i></small>  
+                      <h5>Benefits of Eating Mangoes</h5>
+                      <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree</p>
+                      <div class="article-cta">
+                      
+                      <a href="#">Read More <i class="bx bx-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up"  data-aos-delay="600">
+                <article class="article article-style-b">
+                  <div class="article-header">
+                    <div class="article-image" style="background-image: url('./img/fruits/4.jpg')">
+                    </div>
+                    <div class="article-title">
+                      <h2><a href="#">Cashew</a></h2>
+                    </div>
+                  </div>
+                  <div class="article-details">
+                      <small>June 20, 2022 | Posted by<a href="#"> Admin </a><i class="bx bx-comment">3</i></small>  
+                      <h5>Benefits of Eating Cashew</h5>
+                      <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree</p>
+                      <div class="article-cta">
+                      
+                      <a href="#">Read More <i class="bx bx-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+        </div>
+      </div>
+    </section>
+
+  <!-- Blog Section -->
+
+  <!----------------- Get Started Area ----------------------------->
+    <!-- <section id="get-started">
+      <div class="container">
+        <h2 class="text-center">Lorem ipsum dolor.</h2>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </section> -->
+
+
+    <!----------------- End Get Started Area ----------------------------->
+
+  <!-------------------- Contact-------------------------->
+  <section id="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <img src="./img/contact-us.png" class="img-fluid img" alt="">
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos="500">
+            <h3 class="contact-title">Contact us</h3>
+             <form id="form">
+                <div class="inputControl">
+                  <input type="text" id="name" class="form-control" placeholder="Full name">
+                  <div class="icons">
+                    <div class="icon1 bx bx-error"></div>
+                    <div class="icon2 bx bx-check"></div>
+                  </div>
+                  <div class="error"></div> 
+                </div>
+                <div class="inputControl">
+                  <input type="email" id="email" class="form-control" placeholder="Email">
+                  <div class="icons">
+                    <div class="icon1 bx bx-error"></div>
+                    <div class="icon2 bx bx-check"></div>
+                  </div>
+                  <div class="error"></div> 
+                </div>
+                <div class="inputControl">
+                  <input type="text" id="subject" class="form-control" placeholder="Subject">
+                  <div class="error"></div> 
+                </div>
+                <div class="inputControl">
+                  <textarea class="form-control text-area" id="message" placeholder="Message"></textarea>
+                  <div class="error"></div> 
+                </div>
+                 <button type="submit" class="btn btn-primary contact-btn">Send Message <i class="bx bxs-paper-plane"></i></button>
+             </form>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------Contact ------------------------->
+   
+    
+<!-- Footer Section -->
+    <section id="footer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About us</h4>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+             <div class="row">
+               <div class="social-media col-md-2">
+                 <i class="bx bxl-facebook"></i>
+               </div>
+               <div class="social-media col-md-2">
+                 <i class="bx bxl-twitter"></i>
+               </div>
+               <div class="social-media col-md-2">
+                 <i class="bx bxl-instagram"></i>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <h4>Services</h4>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Cooked</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Delivery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Quality Foods</a>
+                </li> 
+                <li class="nav-item">
+                  <a href="./login.html" class="nav-link"><i class="bx bx-chevron-right"></i> Login</a>
+                </li> 
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <h4>Have a Question?</h4>
+              <div class="row">
+                <div class="col-md-8">
+                  <form action="#">
+                    <input type="text" placeholder="Message" class="form-control">
+                  </form>
+                </div>
+                <div class="col-md-4"> <button class="btn news-letter">Send Message <i class="bx bxs-paper-plane"></i></button></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-center copyright">Copyright <i class="bx bx-copyright"></i> 2021 - <script>document.write(new Date().getFullYear())</script> All rights reserved | This template is made with <i class="bx bx-heart"></i>  by Ayomide</p>
+        </div>
+      </footer>
+    </section>
+      
+    </div>
+    <div>
+      <a href="#" class="back-to-top">
+        <i class="bx bxs-chevron-up"></i>
+      </a>
+    </div>
+    
+    <!-- <script>
+            window.onscroll = function() {
+              myFunction();
+            };
+      
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+      
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+          </script> -->
+          <script src="./js/aos.js"></script>
+          <script src="./js/script.js"></script>
+          <script>
+        function getStarted() {
+          const chevron_down = document.querySelector(".chevron-down");
+          chevron_down.style.animationIterationCount = 0; 
+        } 
+
+
+        AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+          </script>
+          <script src="./js/cart.js"></script>
+          <script src="./js/scripts.js"></script>
+          <script src="./js/app.min.js"></script>
+          <script src="./js/form-validate.js"></script>
+          <script src="./js/send-mail.js"></script>
+  </body>
+</html>

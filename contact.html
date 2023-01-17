@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact us | myFood App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">myFood</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./shop.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+                <i class="bx bx-search"></i>
+            </li>
+            <li class="nav-item">
+                  <a href="login.html" target="_blank"><i class="bx bx-user"></i></a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contact-banner">
+      <h3>Contact us</h3>
+      <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="main-contact">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+                <li><i class="bx bx-phone"></i>:(+234) 7065403591 | 9155626469</a></li>
+                <li><i class="bx bx-map"></i>:Ajasin foundation, Owo, Ondo state, Nigeria</li>
+               <li><i class="bx bx-envelope"></i>: ibidapoayomide754@gmail.com</li>
+           </ul>
+          </div>
+          <div class="col-md-6">
+            <form id="form">
+              <h4>Contact us form</h4>
+              <p>Kindly fill all field as they are important</p>
+              <div class="inputControl">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Full name"
+                />
+              </div>
+              <div class="inputControl">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="inputControl">
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="inputControl">
+                <textarea
+                  class="form-control text-area"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+                <div class="error"></div>
+              </div>
+              <button type="submit" class="btn btn-primary contact-btn">
+                Send Message <i class="bx bxs-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="map-area">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.330758193823!2d5.569048714308971!3d7.20305321688955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047af8e3e75af63%3A0xdbc6a4d3caf4d70f!2sAjasin%20Foundation%20Library!5e0!3m2!1sen!2sng!4v1669160843349!5m2!1sen!2sng" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <section id="footer">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>About us</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               <div class="row">
+                 <div class="social-media col-md-2">
+                   <i class="bx bxl-facebook"></i>
+                 </div>
+                 <div class="social-media col-md-2">
+                   <i class="bx bxl-twitter"></i>
+                 </div>
+                 <div class="social-media col-md-2">
+                   <i class="bx bxl-instagram"></i>
+                 </div>
+               </div>
+              </div>
+              <div class="col-md-3">
+                <h4>Services</h4>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Cooked</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Delivery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Quality Foods</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a href="./login.html" class="nav-link"><i class="bx bx-chevron-right"></i> Login</a>
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <h4>Have a Question?</h4>
+                <div class="row">
+                  <div class="col-md-8">
+                    <form action="#">
+                      <input type="text" placeholder="Message" class="form-control">
+                    </form>
+                  </div>
+                  <div class="col-md-4"> <button class="btn news-letter">Send Message <i class="bx bxs-paper-plane"></i></button></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center copyright">Copyright <i class="bx bx-copyright"></i> 2021 - <script>document.write(new Date().getFullYear())</script> All rights reserved | This template is made with <i class="bx bx-heart"></i>  by Ayomide</p>
+          </div>
+        </footer>
+      </section>
+        
+      </div>
+      <div>
+        <a href="#" class="back-to-top">
+          <i class="bx bxs-chevron-up"></i>
+        </a>
+      </div>
+
+
+
+      <script src="./js/aos.js"></script>
+      <script src="./js/script.js"></script>
+      <script>
+    function getStarted() {
+      const chevron_down = document.querySelector(".chevron-down");
+      chevron_down.style.animationIterationCount = 0; 
+    } 
+
+
+    AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+      </script>
+      <script src="./js/scripts.js"></script>
+      <script src="./js/app.min.js"></script>
+      <script src="./js/form-validate.js"></script>
+      <script src="./js/send-mail.js"></script>
+  </body>
+</html>

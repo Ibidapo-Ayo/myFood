@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart | myFood</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#">myFood</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <!-- <button class="btn btn-primary login">Login</button> -->
+                  <i class="bx bx-cart cart-item"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="bx bx-search"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      <section class="cart">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                  <div class="col cart-img">
+                    <img src="./img/jollof.jpg" alt="">
+                  </div>
+                  <div class="col">
+                        <h3 class="cart-title">Fried Rice</h3>
+                    <p class="cart-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae aliquam facere necessitatibus expedita tempora impedit nisi magni exercitationem velit perferendis! Suscipit, corrupti obcaecati quidem aliquid magnam molestiae quod nisi sed?</p>
+                    <span>#</span><span class="cart-price" id="price"></span>
+                   <span>
+                      <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                   </span> <br>
+                   <div class="quantity">
+                    <div>
+                        <button id="subtract">-</button>
+                    </div>
+                    <div>
+                        <input type="text" id="cart-price" value="1">
+                    </div>
+                    <div>
+                        <button id="add">+</button>
+                    </div>
+                   </div>
+                   
+                    <button class="cart-btn"><i class="bx bx-cart"></i> Add to cart</button>
+                  </div>
+                </div>
+        </div>
+      </section>
+
+      <div class="discount">
+        <p>30% Discount</p>
+      </div>
+      
+      <!-- <div class="web-chat-area">
+          <div class="web-chat">
+              <a href="#"> <i class="bx bxs-chat"></i></a>
+              </div>
+
+            <div class="chats">
+
+            </div>
+      </div> -->
+
+
+      <!-- Footer Section -->
+    <section id="footer">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>About us</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               <div class="row">
+                 <div class="social-media col-md-2">
+                   <i class="bx bxl-facebook"></i>
+                 </div>
+                 <div class="social-media col-md-2">
+                   <i class="bx bxl-twitter"></i>
+                 </div>
+                 <div class="social-media col-md-2">
+                   <i class="bx bxl-instagram"></i>
+                 </div>
+               </div>
+              </div>
+              <div class="col-md-3">
+                <h4>Services</h4>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Cooked</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Delivery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bx bx-chevron-right"></i> Quality Foods</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a href="./login.html" class="nav-link"><i class="bx bx-chevron-right"></i> Login</a>
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <h4>Have a Question?</h4>
+                <div class="row">
+                  <div class="col-md-8">
+                    <form action="#">
+                      <input type="text" placeholder="Message" class="form-control">
+                    </form>
+                  </div>
+                  <div class="col-md-4"> <button class="btn news-letter">Send Message <i class="bx bxs-paper-plane"></i></button></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center copyright">Copyright ©2022 All rights reserved | This template is made with <i class="bx bx-heart"></i>  by Ayomide</p>
+          </div>
+        </footer>
+      </section>
+        <!-- <a href="#" class="back-to-top">
+          <i class="bx bxs-chevron-up"></i>
+        </a> -->
+      </div>
+
+
+      <script src="./js/aos.js"></script>
+      <script src="./js/script.js"></script>
+      <script>
+    function getStarted() {
+      const chevron_down = document.querySelector(".chevron-down");
+      chevron_down.style.animationIterationCount = 0; 
+    } 
+
+
+    AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+      </script>
+
+      <!-- Start of txt.me widget code -->
+<script src="https://v3.txt.me/livechat/js/wrapper/7bd9f4ff-cead-4b59-ae4b-5c0a8b99798c" async></script>
+<noscript><a href="https://txt.me/reviews/7bd9f4ff-cead-4b59-ae4b-5c0a8b99798c" rel="nofollow">Rate New Widget customer support</a>, powered by <a href="https://txt.me" rel="noopener nofollow" target="_blank">txt.me</a></noscript>
+<!-- End of txt.me widget code -->->
+
+</body>
+</html>
